@@ -1,11 +1,6 @@
-.. You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-BIG-IP Forward Proxy セットアップガイド
+BIG-IP APM (v15) 簡単セットアップガイド
 ==============================================
-最終更新日: 2020年7月13日
-
-本ドキュメントでは、BIG-IPのForward Proxy設定について解説します。
+最終更新日: 2020年8月3日
 
 はじめに
 ==============================================

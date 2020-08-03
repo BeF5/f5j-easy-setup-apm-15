@@ -5,12 +5,12 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "BIG-IP Forward Proxy セットアップガイド"
+classname = "BIG-IP APM  簡単セットアップガイド"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_url = "https://github.com/ttsuji777/bigip-fwdproxy-jp"
+github_url = "https://github.com/BeF5/f5j-easy-setup-apm-15.git"
 
-git_branch_name = 'master'
+git_branch_name = 'dev'
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
@@ -92,7 +92,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'BIG-IP Forward Proxy セットアップガイド'
+project = u'BIG-IP APM 簡単セットアップガイド'
 copyright = u'F5ネットワークスジャパン合同会社'
 author = u'F5ネットワークスジャパン合同会社'
 
