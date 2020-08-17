@@ -29,5 +29,11 @@
    "⑧","DNS サーバ（Active Directory）","-","10.99.2.218"
    "⑨","NTP サーバ","-","10.99.2.219"
    "⑩","サーバが存在するネットワーク","-","10.99.100.0/24"
-   "-","CLI パスワード（デフォルト）","-","ID/Password:root/default"
-   "-","GUI パスワード（デフォルト）","-","ID/Password:admin/admin"
+
+**User名、パスワード**
+
+  .. csv-table::
+   :header: "項目","User名","Password"
+   :widths: 30, 30, 30
+   "CLI パスワード（デフォルト）","root","default"
+   "GUI パスワード（デフォルト）","admin","admin"
