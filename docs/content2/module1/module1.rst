@@ -7,8 +7,9 @@
    :scale: 40%
 
 (2)	ログイン画面が現れますので、以下のデフォルトのIDとPasswordでログインしてください。
-ID：admin
-Password：admin
+
+- ID：admin
+- Password：admin
 
 .. image:: images/mod2-1-2.png
    :scale: 40%
@@ -16,6 +17,7 @@ Password：admin
 (3)	バージョン14.0より、デフォルトでBIG-IPのセキュアパスワードポリシーが有効となっています。パスワードポリシーを変更しない限り、v13.0以前のデフォルトパスワードは利用できません。
 
 F5LABでは以下のように設定し、Saveボタンを押します。
+
 - Current Password: admin
 - New Password: ilovef5
 - Confirm: ilovef5
