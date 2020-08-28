@@ -16,9 +16,9 @@ Password：admin
 (3)	バージョン14.0より、デフォルトでBIG-IPのセキュアパスワードポリシーが有効となっています。パスワードポリシーを変更しない限り、v13.0以前のデフォルトパスワードは利用できません。
 
 F5LABでは以下のように設定し、Saveボタンを押します。
-   Current Password: admin
-   New Password: ilovef5
-   Confirm: ilovef5
+- Current Password: admin
+- New Password: ilovef5
+- Confirm: ilovef5
 
 .. image:: images/mod2-1-3.png
    :scale: 40%
@@ -38,7 +38,7 @@ F5LABでは以下のように設定し、Saveボタンを押します。
 .. image:: images/mod2-1-6.png
    :scale: 40%
 
-   ~中略~
+~中略~
 
 .. image:: images/mod2-1-7.png
    :scale: 40%
