@@ -1,7 +1,7 @@
-HTTPS Explicit Forward Proxyの基本設定
+BIG-IP APM の初期設定
 ================================================
 
-本章では、BIG-IPをHTTPS用のExplicitプロキシとして構成する手順について、紹介します。
+本章では、BIG-IP APM 初期設定について紹介します。
 
 
 .. toctree::
