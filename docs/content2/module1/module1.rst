@@ -37,7 +37,9 @@ F5LABでは以下のように設定し、Saveボタンを押します。
 
 .. image:: images/mod2-1-6.png
    :scale: 40%
+
    ~中略~
+
 .. image:: images/mod2-1-7.png
    :scale: 40%
 
