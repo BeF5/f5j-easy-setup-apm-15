@@ -6,7 +6,8 @@ VLANの作成
 .. image:: images/mod3-1-1.png
    :scale: 40%
 
-External VLAN の設定
+**External VLAN の設定**
+
 - Name :名前（任意）を指定
 - Interface :1.1を指定
 - Tagging : Untaggedを選択し、Addをクリック
@@ -15,7 +16,8 @@ External VLAN の設定
 .. image:: images/mod3-1-2.png
    :scale: 40%
 
-Internal VLAN の設定
+**Internal VLAN の設定**
+
 - Name :名前（任意）を指定
 - Interface :1.2を指定
 - Tagging : Untaggedを選択し、Addをクリック
