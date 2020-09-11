@@ -68,29 +68,44 @@
 .. image:: images/mod4-1-8.png
    :scale: 40%
 
-   - IPv4 Primary Name Server : 10.99.2.218
-   - DNS Default Domain Suffix : f5jp.local
-   - クライアントPCのPPPアダプタで、SSL-VPNトンネル確立後に割り当てられるDNSサーバとDNSサフィックスを指定します。※ここに指定したDNSサフィックス宛の通信（f5jp.local）は、このDNSサーバを利用する、という設定です。
+- IPv4 Primary Name Server : 10.99.2.218
+- DNS Default Domain Suffix : f5jp.local
+- クライアントPCのPPPアダプタで、SSL-VPNトンネル確立後に割り当てられるDNSサーバとDNSサフィックスを指定します。※ここに指定したDNSサフィックス宛の通信（f5jp.local）は、このDNSサーバを利用する、という設定です。
 
 (9)バーチャルサーバを設定し、「Next」を押します。
 
 .. image:: images/mod4-1-9.png
    :scale: 40%
 
-   - Virtual Server IP Address : 10.99.1.81 / バーチャルサーバのIPアドレス
-   - Redirect Server : チェックする / このチェックボックスを有効にすることで、HTTP(80)でVirtual Serverへアクセスしても、自動的にHTTPS(443)へリダイレクトするVirtual Serverが生成されます。不要であれば、チェックを外してください。
+- Virtual Server IP Address : 10.99.1.81 / バーチャルサーバのIPアドレス
+- Redirect Server : チェックする / このチェックボックスを有効にすることで、HTTP(80)でVirtual Serverへアクセスしても、自動的にHTTPS(443)へリダイレクトするVirtual Serverが生成されます。不要であれば、チェックを外してください。
 
 (10)設定のレビューが表示されます。
 
 .. image:: images/mod4-1-10.png
    :scale: 40%
 
-   - 問題がなければ「Next」をクリックします。
+- 問題がなければ「Next」をクリックします。
 
 (11)設定のサマリーが表示されます。
 
 .. image:: images/mod4-1-11.png
    :scale: 40%
 
-   - 問題がなければ「Finish」をクリックします。
-   - 以上でネットワークアクセス設定は完了です。
+- 問題がなければ「Finish」をクリックします。
+- 以上でネットワークアクセス設定は完了です。
+
+
+**スプリット・トンネルとは**
+SSL-VPNトンネルを使う通信と、使わない通信を分けたいときに使います。
+例えば、以下のような要件があったとします。
+|
+|①	社内LANのサーバは10.99.2.0/24と10.99.100.0/24に設置されているので、それらはSSL-VPNトンネルを使いたい。
+|②	しかし、同時にインターネットも使いたい。
+|
+|このような要件を実現するのがスプリット・トンネルです。
+
+.. image:: images/mod4-1-12.png
+   :scale: 40%
+
+「Use split Tunnelling for Traffic」を選択し、トンネルに向かわせたいネットワーク帯（10.99.2.0/24，10.99.100.0/24）を指定することで、そのネットワークだけはSSL-VPNトンネルを通り、それ以外は、クライアントIP（上図の1.1.1.1）を使ってインターネット（上図3.3.3.3のwebサーバへの通信）を使う、ということが可能になります。
