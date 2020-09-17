@@ -63,3 +63,54 @@ BIG-IPが持つデフォルトのサーバ証明書は、正式な認証局で�
 
 .. image:: images/mod4-3-9.png
    :scale: 40%
+
+
+**Client SSL Profileの生成とVSへの割当て**
+
+(1)Client SSL Profileの生成
+| 「Local Traffic」 → 「Profile」 → 「SSL」 → 「Client」で表示された画面右上の「Create」ボタンを押すと、以下の画面が表示されます。以下のように設定します。
+
+.. image:: images/mod4-3-10.png
+   :scale: 40%
+
+- Name: 名前（任意）を指定
+- Certificate Key Chain: 右のチェックボックスをチェックし、Addボタンをクリック
+
+(2)「Add」ボタンを押すと以下のような設定画面が表示されるので、「abcCompany」を設定します。
+
+.. image:: images/mod4-3-11.png
+   :scale: 40%
+
+- Certificate: abcCompany を選択
+- Key: abcCompany を選択
+- Addをクリック
+
+(3)以下のように表示されます。
+| Certificate Key Chain に、（2）で選択したCertificate , Key が選択されていることを確認し、Finishdをクリックします。
+
+.. image:: images/mod4-3-12.png
+   :scale: 40%
+
+~（略）~
+
+.. image:: images/mod4-3-13.png
+   :scale: 40%
+
+(4)作成した設定が登録されていることを確認。
+
+.. image:: images/mod4-3-14.png
+   :scale: 40%
+
+(5)Virtual ServerへのClient SSL Profileの割当て
+| 「Local Traffic」 → 「Virtual Servers」 を選択し、SSL-VPN接続用に設定したVirtual Serverをクリックすると、以下の画面が表示されます。
+
+.. image:: images/mod4-3-15.png
+   :scale: 40%
+
+~（略）~
+
+.. image:: images/mod4-3-16.png
+   :scale: 40%
+
+- 既存の Client SSL Profile をAvailable に移動し、作成した Client SSL Profile を Selected に移動します。
+- 画面最下部の Update をクリックします。
