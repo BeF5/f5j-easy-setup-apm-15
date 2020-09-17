@@ -33,3 +33,19 @@ Windows 10 + Chromeを使った場合の例です。
 
 .. image:: images/mod4-2-5.png
    :scale: 40%
+
+(6)認証完了後、左下の画面が表示され、タスクバーにF5 Helper Applicationのアイコンが表示されます。
+
+.. image:: images/mod4-2-6.png
+   :scale: 40%
+
+.. image:: images/mod4-2-7.png
+   :scale: 40%
+
+(7)Webブラウザから、以下の宛先へ直接通信ができることを確認します。
+| ①	http://10.99.100.215	
+| ②	http://10.99.100.217
+| また、上記IPアドレスにSSH接続（ポート22番）できることを確認します。
+
+- 〈ご参考〉
+| F5 Helper Applicationのアンインスールは、コントロールパネルのアプリの（アン）インストール機能より行います。 “BIG-IP Edge Client Components”をアンインストールします。ここでは、引続きクライアントを利用するため、アンインストールは行いません。
