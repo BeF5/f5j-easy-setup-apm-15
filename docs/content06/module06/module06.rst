@@ -93,7 +93,7 @@ AD認証の誤り回数カウント
 クライアントからのアクセス
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- まずは、クライアントPCから正しいIDとパスワード (F5 UDF Labの場合は**test1001/ilovef5!**)でアクセスします。「Access」 → 「Authentication」 → 「Local User DB」 → 「Users」を確認します。すると、ユーザ: test1001がエントリされていることが分かります。
+- まずは、クライアントPCから正しいIDとパスワード (F5 UDF Labの場合は"test1001/ilovef5!")でアクセスします。「Access」 → 「Authentication」 → 「Local User DB」 → 「Users」を確認します。すると、ユーザ: test1001がエントリされていることが分かります。
 
 .. figure:: images/mod6-6-1-1-1.png
    :scale: 20%
